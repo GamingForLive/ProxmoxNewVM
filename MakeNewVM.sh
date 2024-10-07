@@ -54,4 +54,4 @@ qm set $VMID --serial0 socket --vga serial0
 echo "Configuring Cloud-Init network (DHCP)..."
 qm set $VMID --ipconfig0 ip=dhcp
 
-echo "VM $VMID created Please verify the Settings manually."
+echo "VM $VMID created Sucesfully Please check for errors as this script does not yet have any checks."
