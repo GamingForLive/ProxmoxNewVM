@@ -17,11 +17,7 @@ BRIDGE="vmbr0"
 
 #Downloading the Debian image
 echo "Downloading Debian 12 cloud image..."
-if [ ! -f "$CLOUD_IMG_PATH" ]; then
-    wget -O "$CLOUD_IMG_PATH" "$CLOUD_IMG_URL"
-else
-    echo "Debian cloud image already exists at $CLOUD_IMG_PATH"
-fi
+curl -O $CLOUD_IMG_URL
 
 #Creating the VM
 echo "Creating VM with ID $VMID..."
