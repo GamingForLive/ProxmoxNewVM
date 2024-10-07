@@ -1,7 +1,12 @@
 # ProxmoxNewVM
 This Repository is meant to help those new to Proxmox to easily setup a VM With Cloud-Init
 
-# Variables
+## Dependencies
+> wget <br>
+> qemu-img
+
+
+## Variables
 #### These are some variables that you can change:
 `VMID=9999` > The ID of the vm that will be created <br> 
 `VMNAME="debian-12-cloudinit"` > The name of the VM That will be created<br>
